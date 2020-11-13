@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>League Of Legends API</title>
+</head>
+<body>
+<h1 th:text="${
+'name: ' + summoner.name +
+' level: ' + summoner.summonerLevel +
+' mastery score: ' + summoner.masteryScore +
+' wins/losses: ' + summoner.wins + '/' + summoner.losses +
+' rank: ' + summoner.tier + ' ' + summoner.rank
+}">this is where the summoner info will be shown</h1>
+</body>
+</html>
