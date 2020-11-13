@@ -5,12 +5,20 @@
     <title>League Of Legends API</title>
 </head>
 <body>
+
 <h1 th:text="${
 'name: ' + summoner.name +
 ' level: ' + summoner.summonerLevel +
-' mastery score: ' + summoner.masteryScore +
-' wins/losses: ' + summoner.wins + '/' + summoner.losses +
-' rank: ' + summoner.tier + ' ' + summoner.rank
+' mastery score: ' + summoner.masteryScore
 }">this is where the summoner info will be shown</h1>
+
+<h1 th:text="${
+'rank: ' + summoner.tier + ' ' + summoner.rank +
+' wins/losses: ' + summoner.wins + '/' + summoner.losses
+}">this is where the league info will be shown</h1>
+
+<img th:src="@{${'/img/ranked-emblems/Emblem_' + summoner.tier + '.png'}}" alt="Ranked Emblem" width="128" height="146"/> <!-- ranked emblem size is 512 x 585 -->
+
+
 </body>
 </html>

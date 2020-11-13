@@ -14,7 +14,8 @@ public class ApiCaller {
     private final Summoner summoner;
 
     private final String playerName = "zeefiosta3";
-    private final String APIKey = "RGAPI-e578b6cd-7eec-4920-b149-3a58f869edf6";
+    // keys expire after 1day get a new kay at: https://developer.riotgames.com/
+    private final String APIKey = "RGAPI-0069a40c-92ad-4999-ada9-914087a289e6";
 
     public ApiCaller(RestTemplateBuilder rtb) {
         this.restTemplate = rtb.build();
